@@ -15,6 +15,6 @@ description)
     /*/
 User Function zGitHub()
 
-    MsgInfo("Fonte que Vai para o GitHub")
+    MsgAlert("Fonte que Vai para o GitHub")
     
 Return 
