@@ -14,5 +14,5 @@
     @see (links_or_references)
     /*/
 User Function zGitHub()
-    MsgAlert("Fonte Teste GitHub")
+    MsgInfo("Fonte Teste GitHub")
 Return 
