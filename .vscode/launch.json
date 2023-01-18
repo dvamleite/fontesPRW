@@ -41,7 +41,24 @@
 		},
 		{
 			"label": "U_zArray"
+		},
+		{
+			"args": [],
+			"label": "u_zConstantes"
+		},
+		{
+			"args": [],
+			"label": "zVariaveis"
+		},
+		{
+			"args": [],
+			"label": "u_zVariaveis"
+		},
+		{
+			"args": [],
+			"label": "u_zGitHub"
 		}
 	],
-	"lastProgramExecuted": "U_zArray"
+	"lastProgramExecuted": "u_zGitHub",
+	"lastProgramArguments": []
 }
