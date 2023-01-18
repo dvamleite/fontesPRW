@@ -3,16 +3,16 @@
 #DEFINE ENTER CHR(13)+CHR(10)
 
 /*===================================================*
-/ Funcao  : fTesteA                                  /
+/ Funcao  : zEstrutura                               /
 / Autor   : Dvam leite                               /
-/ Data    : 08 de Janeiro de 2023                    /
+/ Data    : 18/01/2023                               /
 / Descr   : Funcao estatica de teste                 /
 *====================================================*/
 
 User Function zEstrutura()
 
-Local nPrimeiro  := 10
-Local nSegundo   := 2
+Local nPrimeiro  := 8
+Local nSegundo   := 7
 Local nResultado := 0
 Local cNome      := "A + B"
 
