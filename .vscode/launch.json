@@ -57,8 +57,12 @@
 		{
 			"args": [],
 			"label": "u_zGitHub"
+		},
+		{
+			"args": [],
+			"label": "u_zEstrutura"
 		}
 	],
-	"lastProgramExecuted": "u_zGitHub",
+	"lastProgramExecuted": "u_zEstrutura",
 	"lastProgramArguments": []
 }
