@@ -1,42 +1,42 @@
 #INCLUDE 'PROTHEUS.CH'
+#INCLUDE "TOTVS.CH"
 
 /*/{Protheus.doc} zTpFuncB
-Teste de Funcao de Usuario
-@type function
-@Author Dvam
-@since 08/12/2023
-@version 1.0
-    @example
-    u_zTpFuncB()
-/*/
 
+    Rotina customizada - Para ivocar Outras funcoes
+
+    @type       User Function
+    @author     Dvam leite
+    @since      20/01/2023
+    @version    V12
+    @database   MSSQL, Oracle
+
+    @history    10/03/2022, Dvam leite, ajuste na função teste para retornar uma Mensagem e Chamar outras funcoes.
+    
+    @param      zTpFuncB, fTesteB. 
+
+    @see        zTpFuncB.PRW
+    
+/*/
 User function zTpFuncB()
     Local aArea := GetArea()
 
+    //mostra Mensagem na tela
+    MsgInfo("Estou na funcao <b>(B)</B>")
 
-    //mostra Mensagem e chamar a funcao estatica
-    MsgInfo("Estou na funcao u_zTpFuncB() ", "Atencao")
+    //chamar a funcao estatica
     fTesteB()
 
     RestArea(aArea)
 
 Return
 
-/*
-+====================================================+
-/ Funcao  : fTesteB                                  /
-/ Autor   : Dvam leite                               /
-/ Data    : 08 de Janeiro de 2023                    /
-/ Descr   : Funcao estatica de teste                 /
-*====================================================+
-*/
-
-Static Function fTesteB(cPar1)
+//Funcao estatica que Chama a Funcao Padrao Mata010
+Static Function fTesteB()
     Local aArea := GetArea()
-    Default cPar1 := ""
 
-    //Mensagem 
-    MsgInfo("Estou em uma Funcao estatica <b>(B)</B>, "+cPar1+"!"," Atencao")
+    //chamada de funcao do sistema
+    Mata010()
 
     RestArea(aArea)
 Return

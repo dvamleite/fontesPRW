@@ -1,47 +1,54 @@
-#Include 'Protheus.ch'
+#INCLUDE 'PROTHEUS.CH'
+#INCLUDE "TOTVS.CH"
 
 /*/{Protheus.doc} zTpFuncA
-Teste de Funcao de Usuario
-@type function
-@Author Dvam
-@since 08/12/2023
-@version 1.0
-    @example
-    u_zTpFuncA()
+
+    Rotina customizada - Para ivocar Outras funcoes
+
+    @type       User Function
+    @author     Dvam leite
+    @since      20/01/2023
+    @version    V12
+    @database   MSSQL, Oracle
+
+    @history    10/03/2022, Dvam leite, ajuste na função teste para retornar uma Mensagem e Chamar outras funcoes.
+
+    @param      zTpFuncA, fTesteA. 
+
+    @see        zTpFuncA.PRW
+    
 /*/
 
 User function zTpFuncA()
     Local aArea := GetArea()
 
-    //Chamada de Funcao Padrao
-  //  Mata10 ()
+    MsgInfo("estou na funcao A !")
 
-    //Chamada de funcao de Usuario (Customizada)
-    u_zTpFuncB()
-
-    //Chamada de funcao no mesmo prw
-    fTesteA()
-
-    //Chamada de funcao estatica de outro prw
-    //StaticCall(zTpFuncB, fTesteB, "Dvam")
+    //Chamada de funcao estatica 
+     fTesteA()
 
     RestArea(aArea)
 
 Return
 
-/*===================================================*
-/ Funcao  : fTesteA                                  /
-/ Autor   : Dvam leite                               /
-/ Data    : 08 de Janeiro de 2023                    /
-/ Descr   : Funcao estatica de teste                 /
-*====================================================*/
-
-Static Function fTesteA(cPar1)
+//funcao statica para mostra mensagem de chama e chama a Funcao B de outro Fonte
+Static Function fTesteA()
     Local aArea := getArea()    
 
     //Mensagem
-    MsgInfo("Estou em uma funcao estatica <b>(B)</b>, "+ cPar1+"!", "Atencao")
+    MsgInfo("Estou em uma funcao estatica <b>(A)</b>, ! ")
+
+    //chamar a funcao de outro fonte
+    u_zTpFuncB()
 
     RestArea(aArea)
 Return
+
+/*
+
+Function zTest()
+    MsgInfo("Funcao de uso exclusivo da TOTVS")
+return
+
+*/
 

@@ -61,8 +61,11 @@
 		{
 			"args": [],
 			"label": "u_zEstrutura"
+		},
+		{
+			"args": [],
+			"label": "u_zTpFuncA"
 		}
 	],
-	"lastProgramExecuted": "u_zEstrutura",
-	"lastProgramArguments": []
+	"lastProgramExecuted": "U_zTpFuncA"
 }
