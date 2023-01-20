@@ -5,13 +5,13 @@
     Rotina customizada - Objetivo da rotina
 
     @type       User Function
-    @author     Nome completo
-    @since      13/12/2022
+    @author     Dvam leite
+    @since      20/01/2023
     @version    V12
     @database   MSSQL, Oracle
 
-    @history    10/03/2022, Nome Sobrenome, ajuste na função teste para retornar o valor teste.
-    @history    06/01/2013, Nome Sobrenome, revisado boas práticas de programação.
+    @history    20/01/2023, Nome Sobrenome, ajuste na função teste para retornar o valor teste.
+    @history    20/01/2023, Nome Sobrenome, revisado boas práticas de programação.
 
     @param      aVarSA1, array, dados do cliente da empresa teste.
     @param      nOpcao, numeric, opção de rotina a ser executada, padrão 3 (inclusão)

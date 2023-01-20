@@ -1,15 +1,25 @@
 #INCLUDE 'PROTHEUS.CH'
+#INCLUDE "TOTVS.CH"
 
+/*/{Protheus.doc} zVariaveis
+
+    Rotina customizada - Definicao e tipos de variaveis
+
+    @type       User Function
+    @author     Dvam leite
+    @since      20/01/2023
+    @version    V12
+    @database   MSSQL, Oracle
+
+    @history    20/01/2023, ajustes nas variaveis para mostra seus tipos e valores.
+
+    @param      aVarSA1, array, dados do cliente da empresa teste.
+
+    @see        zVariaveis.PRW
+   
+/*/
 #DEFINE ENTER CHR(13)+CHR(10)
 
-/*/{Protheus.doc} zConstantes
-Exemplo de teste com diretivas / Constantes
-@author Dvam
-@since 17/01/2023
-@version 0.1
-    @exemole
-    u_zConstantes()
-/*/
 USER FUNCTION zVariaveis()
     Local aArea := GetArea()
 
@@ -18,11 +28,11 @@ USER FUNCTION zVariaveis()
     Local dData    := Date()
     Local lTeste   := .T.
     Local cTexto   := "Informacoes no fomato de texto"
-    Local oObjeto   := TFont() :New("Tahoma")
+    //Local oObjeto   := TFont() :New("Tahoma")
     Local xInfo   := 0
     Local aDados   := {"Array de Dados", dData}
     Local bBloco := {||  nValor += 2,;
-                        Alert("O Valor e Igual a "+ENTER+CValToChar(nValor))}
+                        Alert("O Valor e Igual a "+ENTER+cValToChar(nValor))}
 
     //execucao do bloco de codigo
     EVal (bBloco)
@@ -31,7 +41,7 @@ USER FUNCTION zVariaveis()
     xInfo := "Troca de Valor"
 
     //mostra os valores das Variaveis
-    MsgInfo("Variavel do tipo verdadeiro ou falso" +ENTER+CValToChar(lTeste))
+    MsgInfo("Variavel do tipo verdadeiro ou falso" +ENTER+cValToChar(lTeste))
     MsgInfo(cTexto)
     MsgInfo(aDados[1])
 
