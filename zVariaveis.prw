@@ -30,7 +30,7 @@ USER FUNCTION zVariaveis()
     Local cTexto   := "Informacoes no fomato de texto"
     //Local oObjeto   := TFont() :New("Tahoma")
     Local xInfo   := 0
-    Local aDados   := {"Array de Dados", dData}
+    Local aDados   := {"Array de Dados","Com texto e Datas", dData}
     Local bBloco := {||  nValor += 2,;
                         Alert("O Valor e Igual a "+ENTER+cValToChar(nValor))}
 
@@ -41,9 +41,9 @@ USER FUNCTION zVariaveis()
     xInfo := "Troca de Valor"
 
     //mostra os valores das Variaveis
-    MsgInfo("Variavel do tipo verdadeiro ou falso" +ENTER+cValToChar(lTeste))
+    MsgInfo("Variavel do tipo Logico (verdadeiro ou falso)" +ENTER+cValToChar(lTeste))
     MsgInfo(cTexto)
-    MsgInfo(aDados[1])
+    MsgInfo(aDados[3])
 
     RestArea(aArea)
 
