@@ -65,8 +65,10 @@
 		{
 			"args": [],
 			"label": "u_zTpFuncA"
+		},
+		{
+			"label": "u_zEscopo"
 		}
 	],
-	"lastProgramExecuted": "u_zVariaveis",
-	"lastProgramArguments": []
+	"lastProgramExecuted": "u_zEscopo"
 }
