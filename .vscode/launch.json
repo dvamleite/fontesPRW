@@ -68,7 +68,13 @@
 		},
 		{
 			"label": "u_zEscopo"
+		},
+		{
+			"label": "u_APPINT01"
+		},
+		{
+			"label": "u_APPINT02"
 		}
 	],
-	"lastProgramExecuted": "u_zEscopo"
+	"lastProgramExecuted": "u_APPINT01"
 }
