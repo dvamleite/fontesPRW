@@ -10,7 +10,7 @@
     @version    V12
     @database   MSSQL, Oracle
 
-    @history    20/01/2023, Dvam leite, Criacao de função para teste e escopo de variavei e passagem de valores entre funcoes.
+    @history    21/01/2023, Dvam leite, Criacao de função para teste e escopo de variavei e passagem de valores entre funcoes.
 
     @param      zEscopo(), fEscopo().
 
