@@ -7,11 +7,11 @@
 
     @type       User Function
     @author     Dvam leite
-    @since      22/01/2023
+    @since      23/01/2023
     @version    V12
     @database   MSSQL, Oracle
 
-    @history    22/01/2023, Dvam leite, foi criado 2 telas simples onde a tela 1 chama a tela 2 
+    @history    23/01/2023, Dvam leite, foi criado 2 telas simples onde a tela 1 chama a tela 2 
 
     @param      button Proximo (inclusao),
 
@@ -28,6 +28,7 @@ If empty(cNome)
 Else
    MsgInfo("["+cNome+"]","Nome Digitado")
 Endif
+
 Return
 
 /*
@@ -51,13 +52,16 @@ DEFINE DIALOG oDlg TITLE (cTitulo) ;
     COLOR CLR_BLACK, CLR_HBLUE PIXEL
 
 @ 05,05 GET oGet VAR cGetVar  PICTURE (cPicture) ;
-        SIZE (nTam*4),12 OF oDlg PIXEL 
+        SIZE (nTam)*4,12 OF oDlg PIXEL 
 
 @ 25,05  BUTTON oBtn1 PROMPT "Confirmar" SIZE 40,15 ; 
          ACTION (lOk := .T. , oDlg:End()) OF oDlg PIXEL 
 
 @ 25,50  BUTTON oBtn2 PROMPT "Voltar" SIZE 40,15 ; 
          ACTION (oDlg:End()) OF oDlg PIXEL 
+
+@ 25,95 BUTTON oBtn3 PROMPT "Mostrar" SIZE 40,15 ; 
+   ACTION (MsgInfo("["+Alltrim(cGetVar)+"]","Mostrando o Nome")) OF oDlg PIXEL 
 
 ACTIVATE DIALOG oDlg CENTER
 
