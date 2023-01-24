@@ -7,12 +7,12 @@
 
     @type       User Function
     @author     Dvam leite
-    @since      23/01/2023
+    @since      24/01/2023
     @version    V12
     @database   MSSQL, Oracle
 
-    @history    23/01/2023, Dvam leite, ajuste na função teste para retornar o valor teste.
-    @history    23/01/2023, Dvam leite, revisado boas práticas de programação.
+    @history    24/01/2023, Dvam leite, ajuste na função teste para retornar o valor teste.
+    @history    24/01/2023, Dvam leite, revisado boas práticas de programação.
 
     @param      aVarSA1, array, dados do cliente da empresa teste.
     @param      nOpcao, numeric, opção de rotina a ser executada, padrão 3 (inclusão)
