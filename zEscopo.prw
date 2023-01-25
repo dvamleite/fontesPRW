@@ -19,49 +19,49 @@
 /*/
 
 User Function zEscopo()
-    Local aArea := GetArea()
+	Local aArea := GetArea()
 
-    //Variaveis Locais
-    Local nVar01 := 5
-    Local nVar02 := 8 
-    Local nVar03 := 10
+	//Variaveis Locais
+	Local nVar01 := 5
+	Local nVar02 := 8
+	Local nVar03 := 10
 
-    //Variaveis Privadas
-    Private cTst := "Teste Pvt"
-    cTst2 := "Teste Pvt2"
+	//Variaveis Privadas
+	Private cTst := "Teste Pvt"
+	cTst2 := "Teste Pvt2"
 
-    //Variaveis Publicas
-    Public __cTeste  := "Dvam"
-    Public __cTeste2 := "Leite"
+	//Variaveis Publicas
+	Public __cTeste  := "Dvam"
+	Public __cTeste2 := "Leite"
 
-    //Chamada de outra Rotina para demonstra escopo de variaveis
-    fEscopo(nVar01, @nVar02)
+	//Chamada de outra Rotina para demonstra escopo de variaveis
+	fEscopo(nVar01, @nVar02)
 
-    Alert(nVar02)
-    Alert("Public: "+__cTeste + " " + __cTeste2)
-    RestArea(aArea)
-    Return
-    
-    //Funcao que recebe as variaveis da funcao zEscopo
-    Static Function fEscopo(nValor1,nValor2, nValor3)
-        Local aArea := GetArea()
+	Alert(nVar02)
+	Alert("Public: "+__cTeste + " " + __cTeste2)
+	RestArea(aArea)
+Return
 
-        //Variaveis Locais
-        Local __cTeste2 := "Teste2"
+	//Funcao que recebe as variaveis da funcao zEscopo
+Static Function fEscopo(nValor1,nValor2, nValor3)
+	Local aArea := GetArea()
 
-        //Variaveis Default
-        Default nValor1 := 0
-        Default nValor2 := 0
-        Default nValor3 := 0
+	//Variaveis Locais
+	Local __cTeste2 := "Teste2"
 
-        //Altera o valor Da Variavel nValor2 somando mais 10
-        nValor2 += 10
+	//Variaveis Default
+	Default nValor1 := 0
+	Default nValor2 := 0
+	Default nValor3 := 0
 
-        //Mostra o conteudo da variavel Private cTeste2
-        Alert("Private: "+cTst2)
+	//Altera o valor Da Variavel nValor2 somando mais 10
+	nValor2 += 10
 
-        //Atribui Valor na Variavel Publica __cTeste para mostra o perigo da utilizacao de variaveis publicas
-        __cTeste := "Teste1"
+	//Mostra o conteudo da variavel Private cTeste2
+	Alert("Private: "+cTst2)
 
-        RestArea(aArea)
-    Return
+	//Atribui Valor na Variavel Publica __cTeste para mostra o perigo da utilizacao de variaveis publicas
+	__cTeste := "Teste1"
+
+	RestArea(aArea)
+Return

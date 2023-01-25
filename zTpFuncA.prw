@@ -20,28 +20,28 @@
 /*/
 
 User function zTpFuncA()
-    Local aArea := GetArea()
+	Local aArea := GetArea()
 
-    MsgInfo("estou na funcao A !")
+	MsgInfo("estou na funcao A !")
 
-    //Chamada de funcao estatica 
-     fTesteA()
+	//Chamada de funcao estatica
+	fTesteA()
 
-    RestArea(aArea)
+	RestArea(aArea)
 
 Return
 
 //funcao statica para mostra mensagem de chama e chama a Funcao B de outro Fonte
 Static Function fTesteA()
-    Local aArea := getArea()    
+	Local aArea := getArea()
 
-    //Mensagem
-    MsgInfo("Estou em uma funcao estatica <b>(A)</b>, ! ")
+	//Mensagem
+	MsgInfo("Estou em uma funcao estatica <b>(A)</b>, ! ")
 
-    //chamar a funcao de outro fonte
-    u_zTpFuncB()
+	//chamar a funcao de outro fonte
+	u_zTpFuncB()
 
-    RestArea(aArea)
+	RestArea(aArea)
 Return
 
 /*

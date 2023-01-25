@@ -19,24 +19,24 @@
     
 /*/
 User function zTpFuncB()
-    Local aArea := GetArea()
+	Local aArea := GetArea()
 
-    //mostra Mensagem na tela
-    MsgInfo("Estou na funcao <b>(B)</B>")
+	//mostra Mensagem na tela
+	MsgInfo("Estou na funcao <b>(B)</B>")
 
-    //chamar a funcao estatica
-    fTesteB()
+	//chamar a funcao estatica
+	fTesteB()
 
-    RestArea(aArea)
+	RestArea(aArea)
 
 Return
 
 //Funcao estatica que Chama a Funcao Padrao Mata010
 Static Function fTesteB()
-    Local aArea := GetArea()
+	Local aArea := GetArea()
 
-    //chamada de funcao do sistema
-    Mata010()
+	//chamada de funcao do sistema
+	Mata010()
 
-    RestArea(aArea)
+	RestArea(aArea)
 Return

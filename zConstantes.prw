@@ -22,34 +22,34 @@
 
 //Se for espanhol
 #Ifdef SPANISH
-    #Define STR_TESTE 'Un gran poder conlleva una gran responsabilidad.'
-    #Define STR_TITULO 'Precaucion'
+	#Define STR_TESTE 'Un gran poder conlleva una gran responsabilidad.'
+	#Define STR_TITULO 'Precaucion'
 
 //Senao, ira testa este bloco
 #Else
 
-    //se for em Ingles
-    #Ifdef ENGLISH
-        #Define STR_TESTE 'with great power comes great responsibility.'
-        #Define STR_TITULO 'Caution'
+	//se for em Ingles
+	#Ifdef ENGLISH
+		#Define STR_TESTE 'with great power comes great responsibility.'
+		#Define STR_TITULO 'Caution'
 
 //Senao, ira testa este bloco
-#Else
+	#Else
 //Se for Portugues
-        #Define STR_TESTE 'Com grandes poderes vem grandes responsabilidades'
-        #Define STR_TITULO 'Atencao'
-    #EndIf
-#EndIf 
+		#Define STR_TESTE 'Com grandes poderes vem grandes responsabilidades'
+		#Define STR_TITULO 'Atencao'
+	#EndIf
+#EndIf
 
 //Constantes
 #Define STR_PULA Chr(13)+Chr(10)
 
 User Function zConstantes()
-    Local aArea := GetArea()
+	Local aArea := GetArea()
 
-    //Mensagem que vai ser Mostrada na tela
-    MsgInfo(STR_TESTE + STR_PULA + "...", STR_TITULO)
+	//Mensagem que vai ser Mostrada na tela
+	MsgInfo(STR_TESTE + STR_PULA + "...", STR_TITULO)
 
-    RestArea(aArea)
+	RestArea(aArea)
 
 Return

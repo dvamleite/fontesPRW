@@ -20,63 +20,63 @@
 /*/
 
 User Function zLacoFor()
-Local i
-Local j
+	Local i
+	Local j
 
-For i := 1 to 2  
+	For i := 1 to 2
 
-    MsgInfo("O Valor da Repeticao 1 e : "+ Alltrim(Str(i)))
+		MsgInfo("O Valor da Repeticao 1 e : "+ Alltrim(Str(i)))
 
-    for j := 1 to 4
+		for j := 1 to 4
 
-       MsgInfo("A soma de: "+Alltrim(Str(i))+" + "+Alltrim(Str(j))+ " = "+Alltrim(Str(i+j))) 
+			MsgInfo("A soma de: "+Alltrim(Str(i))+" + "+Alltrim(Str(j))+ " = "+Alltrim(Str(i+j)))
 
-    Next
+		Next
 
-if i == 2 && j >= 4
+		if i == 2 && j >= 4
 
-    zLacoCond()
+			zLacoCond()
 
-EndIf
+		EndIf
 
-Next 
+	Next
 
 Return
 
 //Funcao statica com laco de repeticao e condicional
 Static Function zLacoCond()
-Local i 
-Local nIni, nFim
+	Local i
+	Local nIni, nFim
 
-nIni := 100
-nFim := 120
+	nIni := 100
+	nFim := 120
 
-For i := nIni To nFim Step 2    
+	For i := nIni To nFim Step 2
 
-    If i == 110
+		If i == 110
 
-        MsgAlert("Laco 2 Aki !")
-        zLacoWhile()
+			MsgAlert("Laco 2 Aki !")
+			zLacoWhile()
 
-    EndIf
-Next
+		EndIf
+	Next
 
 Return Nil
 
 //Funcao statica com Laco do tipo While 
 Static Function zLacoWhile()
-Local  nAux := 350
-Local nCnt := 15
-Local nRgs := 0
+	Local  nAux := 350
+	Local nCnt := 15
+	Local nRgs := 0
 
-nAux := Int(nAux /2)
+	nAux := Int(nAux /2)
 
-While nAux < 350
+	While nAux < 350
 
-    nAux += nCnt
-    nRgs ++
-Enddo 
+		nAux += nCnt
+		nRgs ++
+	Enddo
 
-Alert("O laco foi executado "+ CValToChar(nRgs) + " vezes !")
+	Alert("O laco foi executado "+ CValToChar(nRgs) + " vezes !")
 
 Return
