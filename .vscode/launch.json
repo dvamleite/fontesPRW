@@ -86,8 +86,12 @@
 		},
 		{
 			"label": "u_zCrud01"
+		},
+		{
+			"args": [],
+			"label": "u_zCalcMed"
 		}
 	],
-	"lastProgramExecuted": "<cancel>",
+	"lastProgramExecuted": "u_zCalcMed",
 	"lastProgramArguments": []
 }
