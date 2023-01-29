@@ -10,10 +10,7 @@
     @version    V12
     @database   MSSQL, Oracle
 
-    @history    24/01/2023, Dvam leite,exemplo de matriz (Array).
-
-    @param      aVarSA1, array, dados do cliente da empresa teste.
-
+    @history    24/01/2023, Dvam leite,exemplo de matriz (Array)
     @see        zArray.PRW
     
 /*/
