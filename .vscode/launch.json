@@ -90,8 +90,16 @@
 		{
 			"args": [],
 			"label": "u_zCalcMed"
+		},
+		{
+			"args": [],
+			"label": "zCalMate"
+		},
+		{
+			"args": [],
+			"label": "u_zCalMate"
 		}
 	],
-	"lastProgramExecuted": "u_zCalcMed",
+	"lastProgramExecuted": "u_zCalMate",
 	"lastProgramArguments": []
 }
